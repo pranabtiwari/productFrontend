@@ -1,5 +1,6 @@
 
 import { SignedIn, SignedOut, SignInButton, SignOutButton } from "@clerk/clerk-react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Navbar from "./components/NavBar";
 import { Navigate, Route, Routes } from "react-router";
 import HomePage from "./pages/HomePage";
@@ -31,6 +32,7 @@ function App() {
           />
         </Routes>
       </main>
+      <SpeedInsights />
     </div>
   );
 }
